@@ -1,7 +1,6 @@
 ﻿using OpenBots.Core.UI.Forms;
-using OpenBots.Core.Utilities.CommandUtilities;
+using OpenBots.Core.ScriptEngine;
 using System;
-using System.Diagnostics;
 using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -105,29 +104,20 @@ namespace OpenBots.UI.Forms.Supplement_Forms
 
         private void utBtnCompile_Click(object sender, EventArgs e)
         {
+
             lstCompilerResults.Items.Clear();
 
             lstCompilerResults.Items.Add("Initializing Compiler Services..");
-
-            var compilerSvc = new CompilerServices();
-
             lstCompilerResults.Items.Add("Compiling..");
-            var result = compilerSvc.CompileInput(rtbCode.Text);
 
-            if (result.Errors.HasErrors)
+            var result = ScriptEngineCompiler.Compile(rtbCode.Text);
+            if (result.GetType() == typeof(int))
             {
-                foreach (var error in result.Errors)
-                {
-                    lstCompilerResults.Items.Add(error);
-                }
+                if ((int)result == 0)
+                    lstCompilerResults.Items.Add("Compilation Successful..");
             }
-            else
-            {
-                lstCompilerResults.Items.Add("Compiled Successfully!");
-
-                if (chkRunAfterCompile.Checked)
-                    Process.Start(result.PathToAssembly);
-            }
+            else if (result.GetType() == typeof(System.Text.StringBuilder))
+                lstCompilerResults.Items.Add(result.ToString());
         }
 
         private void uiBtnSave_Click(object sender, EventArgs e)

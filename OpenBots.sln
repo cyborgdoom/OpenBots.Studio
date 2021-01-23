@@ -112,6 +112,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBots.Commands.Folder.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBots.Commands.Variable.Test", "OpenBots.Commands.Test\OpenBots.Commands.Variable.Test\OpenBots.Commands.Variable.Test.csproj", "{E9FCCA0D-4F50-4A1E-92E4-DCF72D56B7F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBots.ScriptEngine", "OpenBots.ScriptEngine\OpenBots.ScriptEngine.csproj", "{55AA5060-ECF5-4D8C-9B50-D1FB36625243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -744,6 +746,18 @@ Global
 		{E9FCCA0D-4F50-4A1E-92E4-DCF72D56B7F2}.Release|x64.Build.0 = Release|Any CPU
 		{E9FCCA0D-4F50-4A1E-92E4-DCF72D56B7F2}.Release|x86.ActiveCfg = Release|Any CPU
 		{E9FCCA0D-4F50-4A1E-92E4-DCF72D56B7F2}.Release|x86.Build.0 = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|x64.Build.0 = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Debug|x86.Build.0 = Debug|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|x64.ActiveCfg = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|x64.Build.0 = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|x86.ActiveCfg = Release|Any CPU
+		{55AA5060-ECF5-4D8C-9B50-D1FB36625243}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
